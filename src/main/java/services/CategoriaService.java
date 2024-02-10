@@ -1,5 +1,6 @@
 package services;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
@@ -90,6 +91,17 @@ public class CategoriaService implements CategoriaRepository {
     public List<Categoria> findAll() {
         // TODO Auto-generated method stub
         return categoriaRepository.findAll();
+    }
+
+    public List<Categoria> findAllByProduct(Long id) {
+        List<Categoria> categoriasRespuesta = new ArrayList<>();
+        List<Categoria> categorias = categoriaRepository.findAll();
+        for (int i = 0; i < categorias.size(); i++) {
+            if (categorias.get(i).getProducto().getId() == id) {
+                categoriasRespuesta.add(categorias.get(i));
+            }
+        }
+        return categoriasRespuesta;
     }
 
     @Override

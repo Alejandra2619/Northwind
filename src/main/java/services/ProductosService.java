@@ -16,7 +16,7 @@ import entities.Productos;
 import repositories.ProductosRepository;
 
 @Service
-public class ProductosService implements ProductosRepository{
+public class ProductosService implements ProductosRepository {
     @Autowired
     private ProductosRepository productosRepository;
 
@@ -105,8 +105,7 @@ public class ProductosService implements ProductosRepository{
 
     @Override
     public <S extends Productos> S save(S entity) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'save'");
+        return productosRepository.save(entity);
     }
 
     @Override

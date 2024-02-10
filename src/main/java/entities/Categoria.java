@@ -52,4 +52,9 @@ public class Categoria {
         this.descripcion = descripcion;
     }
 
+    public Categoria getProducto() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getProducto'");
+    }
+
 }

@@ -105,8 +105,7 @@ public class TransportistasService implements TransportistasRepository {
 
     @Override
     public <S extends Transportistas> S save(S entity) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'save'");
+        return transportistasRepository.save(entity);
     }
 
     @Override

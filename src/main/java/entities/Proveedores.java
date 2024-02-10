@@ -67,5 +67,10 @@ public class Proveedores {
     public void setEmail_contacto(String email_contacto) {
         this.email_contacto = email_contacto;
     }
+
+    public Object findAll() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findAll'");
+    }
     
 }

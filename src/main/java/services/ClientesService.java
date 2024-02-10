@@ -105,9 +105,9 @@ public class ClientesService implements ClientesRepository {
 
     @Override
     public <S extends Clientes> S save(S entity) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'save'");
+        return clientesRepository.save(entity);
     }
+
 
     @Override
     public Optional<Clientes> findById(Long id) {
