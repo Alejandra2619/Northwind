@@ -1,0 +1,16 @@
+<div class="formularioRegistro">
+    <h2>Crear categoria</h2>
+<form [formGroup]="categoriaForm" (ngSubmit)="guardar()">
+    <div class = "form-group">
+        <label>Nombre</label>
+        <input type ="text" formControlName="nombre" class="form-control">
+    </div>
+    <div class = "form-group">
+        <label>Descripción</label>
+        <input type ="text" formControlName="descripcion" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+</div>
+<router-outlet> </router-outlet>
